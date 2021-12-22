@@ -63,10 +63,10 @@ class _HomePageState extends State<HomePage>
                 position: hoverAnimation,
                 child: AnimatedSwitcher(
                   duration: const Duration(milliseconds: 500),
-                  child: Image.asset(
-                    products[currentIndex].path,
-                    key: ValueKey<int>(currentIndex),
-                  ),
+                  child: Image.asset(products[currentIndex].path,
+                      key: ValueKey<int>(currentIndex),
+                      height: 300,
+                      fit: BoxFit.cover),
                 ),
               ),
               const SizedBox(

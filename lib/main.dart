@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:proyecto/captura.dart';
 import 'package:proyecto/reto_final.dart';
 
 void main() {
@@ -13,10 +14,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.teal,
       ),
-      home: const HomePage(),
+      home: const CapturaPage(),
     );
   }
 }

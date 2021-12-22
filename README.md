@@ -1,6 +1,6 @@
 # proyecto
 
-A new Flutter project.
+Proyecto del curso - Desarrollo de Aplicaciones con Flutter
 
 ## Getting Started
 
