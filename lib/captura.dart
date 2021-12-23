@@ -128,7 +128,14 @@ class _CapturaPageState extends State<CapturaPage> {
     print('Response status: ${response.statusCode}');
     print('Response body: ${response.body}');
 
-    // print(await http.read(Uri.parse('https://postman-echo.com/post')));
+    if (response.statusCode == 200) {
+      setState(() {
+        image = null;
+        base64img = '';
+        titleController.text = '';
+        descriptionController.text = '';
+      });
+    }
   }
 
   @override
